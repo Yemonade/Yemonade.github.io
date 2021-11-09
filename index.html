@@ -136,6 +136,31 @@
   <footer class="entry-footer"><span title='2021-11-09 00:30:22 +0800 CST'>November 9, 2021</span></footer>
   <a class="entry-link" aria-label="post link to First_post" href="http://example.org/posts/first_post/"></a>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>
+    </h2>
+  </header>
+  <section class="entry-content">
+    <p>How to Build a Personal Blog   Install Hugo
+# 输入下列命令检查是否安装成功 hugo version   Create a Folder
+cd dir hugo new site site_name -f yml   Choose a Theme
+从Hugo官网进入，点击 Themes 下载喜欢的主题
+这里选择PaperMode主题
+然后Download: 在之前创建的site_name文件夹下输入下列命令即可
+git clone url地址 themes/PaperMod --depth=1 在根目录下的config.yml增加
+theme: &#34;PaperMod&#34;   创建第一个post
+在根目录下输入下列命令
+hugo new posts/first_post.md 可以发现根目录的content文件夹下多了posts/文件夹，里面存我们新建的 first_post.md 文件
+点击进入，将draft:true一行改为draft:false
+  在本地启动
+hugo server # or hugo serve -e production 然后输入网址http://localhost:1313就可以看到啦
+  部署到github...</p>
+  </section>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to " href="http://example.org/posts/how-to-build-a-personal-blog/"></a>
+</article>
     </main>
     
 <footer class="footer">

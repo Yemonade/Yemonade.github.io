@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>My New Hugo Site</title>
+<meta name="keywords" content="" />
+<meta name="description" content="How to Build a Personal Blog   Install Hugo
+# 输入下列命令检查是否安装成功 hugo version   Create a Folder
+cd dir hugo new site site_name -f yml   Choose a Theme
+从Hugo官网进入，点击 Themes 下载喜欢的主题
+这里选择PaperMode主题
+然后Download: 在之前创建的site_name文件夹下输入下列命令即可
+git clone url地址 themes/PaperMod --depth=1 在根目录下的config.yml增加
+theme: &#34;PaperMod&#34;   创建第一个post
+在根目录下输入下列命令
+hugo new posts/first_post.md 可以发现根目录的content文件夹下多了posts/文件夹，里面存我们新建的 first_post.md 文件
+点击进入，将draft:true一行改为draft:false
+  在本地启动
+hugo server # or hugo serve -e production 然后输入网址http://localhost:1313就可以看到啦
+  部署到github">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/posts/how-to-build-a-personal-blog/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.6f60056d44d3f7eb69a4bc6c332b59960f3a995802bded244750232f33713c49.css" integrity="sha256-b2AFbUTT9&#43;tppLxsMytZlg86mVgCve0kR1AjLzNxPEk=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.87.0" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="How to Build a Personal Blog   Install Hugo
+# 输入下列命令检查是否安装成功 hugo version   Create a Folder
+cd dir hugo new site site_name -f yml   Choose a Theme
+从Hugo官网进入，点击 Themes 下载喜欢的主题
+这里选择PaperMode主题
+然后Download: 在之前创建的site_name文件夹下输入下列命令即可
+git clone url地址 themes/PaperMod --depth=1 在根目录下的config.yml增加
+theme: &#34;PaperMod&#34;   创建第一个post
+在根目录下输入下列命令
+hugo new posts/first_post.md 可以发现根目录的content文件夹下多了posts/文件夹，里面存我们新建的 first_post.md 文件
+点击进入，将draft:true一行改为draft:false
+  在本地启动
+hugo server # or hugo serve -e production 然后输入网址http://localhost:1313就可以看到啦
+  部署到github" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/how-to-build-a-personal-blog/" /><meta property="article:section" content="posts" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="How to Build a Personal Blog   Install Hugo
+# 输入下列命令检查是否安装成功 hugo version   Create a Folder
+cd dir hugo new site site_name -f yml   Choose a Theme
+从Hugo官网进入，点击 Themes 下载喜欢的主题
+这里选择PaperMode主题
+然后Download: 在之前创建的site_name文件夹下输入下列命令即可
+git clone url地址 themes/PaperMod --depth=1 在根目录下的config.yml增加
+theme: &#34;PaperMod&#34;   创建第一个post
+在根目录下输入下列命令
+hugo new posts/first_post.md 可以发现根目录的content文件夹下多了posts/文件夹，里面存我们新建的 first_post.md 文件
+点击进入，将draft:true一行改为draft:false
+  在本地启动
+hugo server # or hugo serve -e production 然后输入网址http://localhost:1313就可以看到啦
+  部署到github"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://example.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/posts/how-to-build-a-personal-blog/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "How to Build a Personal Blog   Install Hugo\n# 输入下列命令检查是否安装成功 hugo version   Create a Folder\ncd dir hugo new site site_name -f yml   Choose a Theme\n从Hugo官网进入，点击 Themes 下载喜欢的主题\n这里选择PaperMode主题\n然后Download: 在之前创建的site_name文件夹下输入下列命令即可\ngit clone url地址 themes/PaperMod --depth=1 在根目录下的config.yml增加\ntheme: \u0026#34;PaperMod\u0026#34;   创建第一个post\n在根目录下输入下列命令\nhugo new posts/first_post.md 可以发现根目录的content文件夹下多了posts/文件夹，里面存我们新建的 first_post.md 文件\n点击进入，将draft:true一行改为draft:false\n  在本地启动\nhugo server # or hugo serve -e production 然后输入网址http://localhost:1313就可以看到啦\n  部署到github",
+  "keywords": [
+    
+  ],
+  "articleBody": "How to Build a Personal Blog   Install Hugo\n# 输入下列命令检查是否安装成功 hugo version   Create a Folder\ncd dir hugo new site site_name -f yml   Choose a Theme\n从Hugo官网进入，点击 Themes 下载喜欢的主题\n这里选择PaperMode主题\n然后Download: 在之前创建的site_name文件夹下输入下列命令即可\ngit clone url地址 themes/PaperMod --depth=1 在根目录下的config.yml增加\ntheme: \"PaperMod\"   创建第一个post\n在根目录下输入下列命令\nhugo new posts/first_post.md 可以发现根目录的content文件夹下多了posts/文件夹，里面存我们新建的 first_post.md 文件\n点击进入，将draft:true一行改为draft:false\n  在本地启动\nhugo server # or hugo serve -e production 然后输入网址http://localhost:1313就可以看到啦\n  部署到github\n在GitHub上创建一个仓库，名为Github用户名.github.io。注意命名规范\n在根目录执行：hugo\n此时，所有的静态页面都会生成到public目录。执行以下命令\ncd public git init git remote add origin git@github.com:Github用户名/Github用户名.github.io.git git add -A git commit -m \"first commit\" git push -u origin master 浏览器输入https://Github用户名.github.io/，就可以看到了\n注意：最后一步push失败可考虑\n法一：\n修改.git/config文件\n将 [remote “origin”] url = https://github.com/用户名/仓库名.git\n修改为 [remote “origin”] url = https://用户名:密码@github.com/用户名/仓库名.git\n若显示Connection was reset, errno 10054错误，解决方案\ngit config --global --unset-all remote.origin.proxy 法二：\ncd ~/.ssh ssh-keygen -t rsa -C \"邮箱地址\" cat id_rsa.pub 添加公钥\n若发现push到master分支\ngit checkout -b main # 切换分支到main git branch -D master # 删除本地的master分支 git push origin --delete master 删除Github项目上的master分支 git push -u origin main -f # 强制进行代码推送（会失去readme文档）   剩下的一些事\n之后创建blog只需在之前说的那个/content/blog文档下创建新的文件即可，然后再输入下列命令即可\nhugo cd public git init git remote add origin git@github.com:Github用户名/Github用户名.github.io.git git add -A git commit -m \"xxx\" git push # 注意若无反应先hugo server一下，然后再打开Blog网站 参考网站\nInstallation\npush 失败\n[Git工具直接推送代码到main分支](git pull origin main –allow-unrelated-histories)\nhttps://www.cnblogs.com/RyanXing/p/Hugo.html\n  ",
+  "wordCount" : "183",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/posts/how-to-build-a-personal-blog/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "My New Hugo Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="how-to-build-a-personal-blog">How to Build a Personal Blog<a hidden class="anchor" aria-hidden="true" href="#how-to-build-a-personal-blog">#</a></h1>
+<ol>
+<li>
+<p>Install Hugo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 输入下列命令检查是否安装成功</span>
+hugo version
+</code></pre></div></li>
+<li>
+<p>Create a Folder</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">cd dir
+hugo new site site_name -f yml
+</code></pre></div></li>
+<li>
+<p>Choose a Theme</p>
+<p>从<a href="https://gohugo.io/">Hugo官网</a>进入，点击 Themes 下载喜欢的主题</p>
+<p>这里选择<code>PaperMode</code>主题</p>
+<p>然后Download: 在之前创建的<code>site_name</code>文件夹下输入下列命令即可</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone url地址 themes/PaperMod --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+
+</code></pre></div><p>在根目录下的<code>config.yml</code>增加</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">theme: <span style="color:#e6db74">&#34;PaperMod&#34;</span>
+</code></pre></div></li>
+<li>
+<p>创建第一个post</p>
+<p>在根目录下输入下列命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new posts/first_post.md
+</code></pre></div><p>可以发现根目录的content文件夹下多了posts/文件夹，里面存我们新建的 first_post.md 文件</p>
+<p>点击进入，将<code>draft:true</code>一行改为<code>draft:false</code></p>
+</li>
+<li>
+<p>在本地启动</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server
+<span style="color:#75715e"># or hugo serve -e production</span>
+</code></pre></div><p>然后输入网址http://localhost:1313就可以看到啦</p>
+</li>
+<li>
+<p>部署到github</p>
+<p>在GitHub上创建一个仓库，名为<code>Github用户名.github.io</code>。注意命名规范</p>
+<p>在根目录执行：<code>hugo</code></p>
+<p>此时，所有的静态页面都会生成到<code>public</code>目录。执行以下命令</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd public
+git init
+git remote add origin git@github.com:Github用户名/Github用户名.github.io.git
+git add -A
+git commit -m <span style="color:#e6db74">&#34;first commit&#34;</span>
+git push -u origin master
+</code></pre></div><p>浏览器输入<code>https://Github用户名.github.io/</code>，就可以看到了</p>
+<p>注意：最后一步<code>push</code>失败可考虑</p>
+<p>法一：</p>
+<p>修改<code>.git/config</code>文件</p>
+<p>将 [remote &ldquo;origin&rdquo;] url = <a href="https://github.com/">https://github.com/</a>用户名/仓库名.git</p>
+<p>修改为 [remote &ldquo;origin&rdquo;] url = https://用户名:密码@github.com/用户名/仓库名.git</p>
+<p>若显示<code>Connection was reset, errno 10054</code>错误，解决方案</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global --unset-all remote.origin.proxy
+</code></pre></div><p>法二：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/.ssh
+ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;邮箱地址&#34;</span>
+cat id_rsa.pub
+</code></pre></div><p><img loading="lazy" src="https://raw.githubusercontent.com/Yemonade/imgCloud/main/img/202111090912918.png" alt="image-20211109091207223"  />
+</p>
+<p>添加公钥</p>
+<p><img loading="lazy" src="https://img-blog.csdnimg.cn/20190725142449122.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MjQyNjk2,size_16,color_FFFFFF,t_70" alt=""  />
+</p>
+<p>若发现push到<code>master</code>分支</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git checkout -b main  <span style="color:#75715e"># 切换分支到main</span>
+git branch -D master  <span style="color:#75715e"># 删除本地的master分支</span>
+git push origin --delete master 删除Github项目上的master分支
+git push -u origin main -f <span style="color:#75715e"># 强制进行代码推送（会失去readme文档）</span>
+</code></pre></div></li>
+<li>
+<p>剩下的一些事</p>
+<p>之后创建blog只需在之前说的那个/content/blog文档下创建新的文件即可，然后再输入下列命令即可</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
+cd public
+git init
+git remote add origin git@github.com:Github用户名/Github用户名.github.io.git
+git add -A
+git commit -m <span style="color:#e6db74">&#34;xxx&#34;</span>
+git push 
+<span style="color:#75715e"># 注意若无反应先hugo server一下，然后再打开Blog网站</span>
+</code></pre></div><p>参考网站</p>
+<p><a href="https://github.com/adityatelange/hugo-PaperMod/wiki/Installation">Installation</a></p>
+<p><a href="https://blog.csdn.net/qq_45242696/article/details/97259563?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=git@github.com:%20Permission%20den&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-97259563.nonecase&amp;spm=1018.2226.3001.4187">push 失败</a></p>
+<p>[Git工具直接推送代码到main分支](git pull origin main &ndash;allow-unrelated-histories)</p>
+<p><a href="https://www.cnblogs.com/RyanXing/p/Hugo.html">https://www.cnblogs.com/RyanXing/p/Hugo.html</a></p>
+</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2021 <a href="http://example.org/">My New Hugo Site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
